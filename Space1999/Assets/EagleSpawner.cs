@@ -24,7 +24,7 @@ public class EagleSpawner : MonoBehaviour {
 
 
 
-			if (row!=0){
+			if (row != 0) {
 				
 				GameObject myGameObjectInTheRight = Instantiate (prefab);
 
@@ -35,6 +35,17 @@ public class EagleSpawner : MonoBehaviour {
 				//myGameObjectInTheRight.transform.rotation = this.transform.rotation;
 
 				myGameObjectInTheRight.transform.SetParent (this.transform);
+
+
+				//Change to 
+				//SteeringBehaviour followerSeek = myGameObjectInTheLeft.AddComponent<Seek> ();
+
+
+			} else {
+
+				myGameObjectInTheLeft.gameObject.name = "Leader";
+
+				SteeringBehaviour leaderSeek = myGameObjectInTheLeft.AddComponent<Seek> ();
 
 			}
 

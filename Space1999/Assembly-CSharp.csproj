@@ -53,6 +53,9 @@
   <ItemGroup>
      <Compile Include="Assets\Boid.cs" />
      <Compile Include="Assets\EagleSpawner.cs" />
+     <Compile Include="Assets\followLeader.cs" />
+     <Compile Include="Assets\Seek.cs" />
+     <Compile Include="Assets\SteeringBehaviour.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
